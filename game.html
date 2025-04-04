@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess OpenWorld - Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="game-body">
+    <nav class="game-nav">
+        <div class="nav-brand">
+            <i class="fas fa-chess"></i>
+            <span>Chess OpenWorld</span>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="window.location.href='index.html'">
+                <i class="fas fa-home"></i> Home
+            </button>
+        </div>
+    </nav>
+
+    <div class="game-container">
+        <div id="chessboard"></div>
+    </div>
+
+    <div class="turn-display">
+        <div class="corner-tr"></div>
+        <div class="corner-bl"></div>
+        <div class="corner-br"></div>
+        <div class="hologram-effect"></div>
+        
+        <div class="turn-header">Current Turn</div>
+        <div class="turn-content">
+            <div id="current-team" class="team-indicator team-white">WHITE</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
